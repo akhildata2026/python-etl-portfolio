@@ -1,7 +1,7 @@
 # Payroll ETL Pipeline
 
 ## Overview
-This project demonstrates an ETL pipeline built using Python and SQL Server.
+This project demonstrates an ETL pipeline built using Python and SQL Server.  
 This pipeline processes payroll data from CSV files, validate records, loads data into a staging table, merge in to final table, and track execution logs.
 
 ### Features
