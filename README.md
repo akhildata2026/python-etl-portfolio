@@ -18,22 +18,22 @@ This pipeline processes payroll data from CSV files, validate records, loads dat
 - SQL Server
 
 ### Project Versions
-- full load
-Loads all valid records into sql server
-Script:
-scripts/payroll_full_load.py
-- Incremental Load
-Loads only new/updated records based on last_updated_date
-Script:
-scripts/payroll_incremental_load.py
+- full load  
+Loads all valid records into sql server  
+Script:  
+scripts/payroll_full_load.py  
+- Incremental Load  
+Loads only new/updated records based on last_updated_date  
+Script:  
+scripts/payroll_incremental_load.py  
 
 ### Folder Structure
-data/ - source files
-scripts/ - ETL scripts
-sql/ - table creation scripts
+data/ - source files  
+scripts/ - ETL scripts  
+sql/ - table creation scripts  
 
-### Workflow
-Extract-> Validate -> Stage -> Merge -> Log
+### Workflow  
+Extract-> Validate -> Stage -> Merge -> Log  
 
 
 
