@@ -24,7 +24,7 @@ try:
     )
 
     # =========================
-    # 3. Get Watermark (IMPORTANT)
+    # 3. Get Watermark 
     # =========================
     with engine.connect() as conn:
         result = conn.execute(text("""
@@ -32,9 +32,10 @@ try:
             FROM payroll_final
         """))
         last_run = result.scalar()
-    # scalar to extract the first value from the rows of data, without scalar python wont understand the actual value.
+    # scalar to extract the first value from the rows of data, without scalar python won't understand the actual value.
+    
     # =========================
-    # 4. Extract
+        # 4. Extract
     # =========================
     df = pd.read_csv("data/payroll_data.csv")
 
