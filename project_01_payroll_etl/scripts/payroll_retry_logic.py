@@ -31,7 +31,7 @@ for attempt in range(1, MAX_RETRIES + 1):
         )
 
     # =========================
-    # 3. Get Watermark (IMPORTANT)
+    # 3. Get Watermark 
     # =========================
         with engine.connect() as conn:
             result = conn.execute(text("""
@@ -76,7 +76,8 @@ for attempt in range(1, MAX_RETRIES + 1):
             row_processed = 0
             error_message = "No new data"
             print("No new data,Skipping ETL")
-            break  # valid scenerio,like no data
+            break  
+            # valid scenerio,like no data
             # raise Exception,when its real failure
 
         row_processed = len(df)
