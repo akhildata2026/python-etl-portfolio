@@ -7,8 +7,10 @@ This pipeline processes payroll data from CSV files, validate records, loads dat
 ### Features
 - Full load ETL
 - Incremental load ETL
+- Retry logic
 - Data Validation
 - Duplicate handling
+- Rejected Records Handling
 - Logging and audit tracking
 
 ### Tech Stack
@@ -18,19 +20,31 @@ This pipeline processes payroll data from CSV files, validate records, loads dat
 - SQL Server
 
 ### Project Versions
-- Full load v1  
-Loads all valid records into sql server  
-Script:  
-scripts/payroll_full_load.py  
-- Incremental Load v2  
-Loads only new/updated records based on last_updated_date  
-Script:  
-scripts/payroll_incremental_load.py  
+#### v1 - Full load
+- Extract csv data
+- Validate salary/date columns
+- Load in to staging table
+- Merge in to final table
+  
+#### v2 - Incremental Load     
+- Fetch watermark from target table  
+- Load only new/updated records  
+
+#### v3 - Retry logic
+- Retry ETL on failure
+- Configure retry attempts
+- Delay between retries
+
+#### v4 - Rejected records handling
+- Capture invalid records
+- Save rejected records separately
+- Process only valid records  
 
 ### Folder Structure
 data/ - source files  
 scripts/ - ETL scripts  
 sql/ - table creation scripts  
+rejected_records/rejected_payroll_csv
 
 ### Workflow  
 Extract-> Validate -> Stage -> Merge -> Log  
