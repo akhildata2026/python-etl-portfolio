@@ -1,10 +1,11 @@
-# Payroll ETL Pipeline
+# Payroll ETL Portfolio
 
-## Overview
-This project demonstrates an ETL pipeline built using Python and SQL Server.  
-This pipeline processes payroll data from CSV files, validate records, loads data into a staging table, merge in to final table, and track execution logs.
+## Overview  
+A collection of python ETL projects focused on practical data engineering workflow.  
 
-### Features
+### Projects  
+#### Payroll ETL Pipeline  
+Features
 - Full load ETL
 - Incremental load ETL
 - Data Validation
@@ -17,23 +18,13 @@ This pipeline processes payroll data from CSV files, validate records, loads dat
 - SQLAlchemy
 - SQL Server
 
-### Project Versions
-- Full load  
-Loads all valid records into sql server  
-Script:  
-scripts/payroll_full_load.py  
-- Incremental Load  
-Loads only new/updated records based on last_updated_date  
-Script:  
-scripts/payroll_incremental_load.py  
+Status:  
+Completed (v1,v2)  
 
-### Folder Structure
-data/ - source files  
-scripts/ - ETL scripts  
-sql/ - table creation scripts  
+Next:  
+Retry Logic (v3)
 
-### Workflow  
-Extract-> Validate -> Stage -> Merge -> Log  
+
 
 
 
