@@ -18,7 +18,7 @@ This pipeline processes payroll data from CSV files, validate records, loads dat
 - SQL Server
 
 ### Project Versions
-- full load  
+- Full load  
 Loads all valid records into sql server  
 Script:  
 scripts/payroll_full_load.py  
@@ -34,6 +34,7 @@ sql/ - table creation scripts
 
 ### Workflow  
 Extract-> Validate -> Stage -> Merge -> Log  
+
 
 
 
