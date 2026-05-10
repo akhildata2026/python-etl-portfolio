@@ -48,13 +48,13 @@ for attempt in range(1, MAX_RETRIES + 1):
      # =========================
     # 4. Validation / Cleaning
     # =========================
-        df['salary'] = pd.numeric(df["salary"], errors="coerce")
+        df['salary'] = pd.to_numeric(df["salary"], errors="coerce")
 
         df["last_updated_date"] = pd.to_datetime(df["last_updated_date"],
                                                  format="%d-%m-%y",
                                                  errors="coerce")
         # remove null values
-        df = df.dropna(subset=["emp-id", "salary", "last_updated_date"])
+        df = df.dropna(subset=["emp_id", "salary", "last_updated_date"])
 
         # remove invalid salary
         df = df[df["salary"] > 0]
