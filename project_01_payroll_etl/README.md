@@ -18,11 +18,11 @@ This pipeline processes payroll data from CSV files, validate records, loads dat
 - SQL Server
 
 ### Project Versions
-- Full load  
+- Full load v1  
 Loads all valid records into sql server  
 Script:  
 scripts/payroll_full_load.py  
-- Incremental Load  
+- Incremental Load v2  
 Loads only new/updated records based on last_updated_date  
 Script:  
 scripts/payroll_incremental_load.py  
