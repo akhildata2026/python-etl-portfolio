@@ -1,0 +1,14 @@
+emp_id,employee_name,department,salary,last_updated_date
+101,John,Finance,5000,01-01-24
+102,Sarah,HR,6000,02-01-24
+103,David,IT,7000,03-01-24
+104,Ana,Finance,-2000,04-01-24
+105,Mark,IT,,05-01-24
+106,Alex,IT,6500,01-04-26
+107,Emma,HR,7200,01-04-26
+108,Aila,IT,8000,01-04-26
+110,Sam,IT,8100,02-05-26
+101,John,Finance,6500,06-05-26
+111,Mike,IT,8500,05-05-26
+112,Rose,Finance,9000,02-05-26
+113,Kevin,HR,7800,03-05-26
