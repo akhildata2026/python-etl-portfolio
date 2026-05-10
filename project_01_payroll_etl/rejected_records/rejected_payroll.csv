@@ -1,0 +1,7 @@
+emp_id,employee_name,department,salary,last_updated_date,reject_reason
+105.0,Mark,IT,,2024-01-05,Missing salary
+115.0,Priya,HR,,2026-05-07,Missing salary
+104.0,Ana,Finance,-2000.0,2024-01-04,Invalid salary
+114.0,Ravi,IT,-1000.0,2026-05-06,Invalid salary
+116.0,Tom,Finance,7000.0,,Invalid date
+,Arun,IT,5000.0,2026-05-08,Missing emp_id
